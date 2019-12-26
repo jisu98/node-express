@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- public 폴더에서 가져오기 -->
+</head>
+<body>
+    <h1>Main page</h1>
+    <div>
+        <p><a href="/redirect">res.redirect</a>: 메인 페이지로 바로 리다이렉트됩니다. </p>
+        <p><a href="/render">res.render</a>: 백엔드에서 정보를 받아서 페이지를 랜더합니다. </p>
+        <p><a href="/send1">res.send 1</a>: 백엔드에서 바로 html 코드를 보내서 실행합니다. </p>
+        <p><a href="/send2">res.send 2</a>: 백엔드에서 바로 script 코드를 보내서 실행합니다. </p>
+    </div>
+    <div>
+        <p>[form] <a href="/form">req.body</a>: body에 정보를 담아서 백엔드로 보냅니다. </p>
+        <p>[board] <a href="/board">req.params</a>: path에 정보를 담아서 백엔드로 보냅니다. </p>
+        <p>[search] <a href="/search">req.query</a>: 쿼리스트링에 정보를 담아서 백엔드로 보냅니다. </p>
+        <p>body, params, query 세 가지는 동시에 사용 가능합니다. </p>
+    </div>
+    <div>
+        <img src='/images/karina-vorozheeva-rW-I87aPY5Y-unsplash.jpg'> <!-- public 폴더에서 가져오기 -->
+    </div>
+</body>
+</html> 

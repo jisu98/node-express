@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+</head>
+<body>
+    <h1>Search page</h1>
+    <form action='/search' method='GET' enctype='application/x-www-form-urlencoded'>
+        <p>
+            <strong>검색어</strong>
+            <input type="text" name="keyword" placeholder="검색어 입력">
+        </p>
+        <p>
+            <input type="submit" value="찾기">
+        </p>
+        <% if(keyword !== '' && keyword != null) { %>
+            <p> 
+                <%- keyword %>에 대한 검색 결과: <%- result %>
+            </p>
+        <% } %>
+        <p>
+    </form>
+</body>
+</html>
